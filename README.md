@@ -13,3 +13,5 @@ $ make shell
 $ make shell CMD="server list"
 # prints "openstack server list" output
 ```
+
+Tags of this image follow the openstack client installed within.
