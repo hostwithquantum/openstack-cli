@@ -1,7 +1,9 @@
-FROM ghcr.io/hostwithquantum/python-poetry:v0.1.0
+FROM ghcr.io/hostwithquantum/python-poetry:v0.4.0
 
 ADD workspace /workspace
 WORKDIR /workspace
-RUN ${POETRY_CMD} install
+RUN apt update -y \
+    && apt install -y libffi-dev \
+    && /usr/local/bin/poetry install
 
-ENTRYPOINT [ "/root/.local/bin/poetry", "run", "openstack" ]
+ENTRYPOINT [ "/usr/local/bin/poetry", "run", "openstack" ]
