@@ -1,11 +1,14 @@
----
 version: 2
 updates:
-  - package-ecosystem: "docker"
-    directory: "/rootfs"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
+- package-ecosystem: "docker"
+  directory: "/rootfs"
+  schedule:
+    interval: "daily"
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
+- package-ecosystem: "pip"
+  directory: "/rootfs/workspace"
+  schedule:
+     interval: "weekly"
