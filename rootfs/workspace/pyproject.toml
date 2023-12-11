@@ -7,7 +7,7 @@ license = "BSD-2-Clause"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-python-openstackclient = "^5.8.0"
+python-openstackclient = "^6.4.0"
 
 [tool.poetry.dev-dependencies]
 
