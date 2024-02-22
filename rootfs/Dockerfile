@@ -1,4 +1,4 @@
-FROM ghcr.io/hostwithquantum/python-poetry:v0.4.0
+FROM ghcr.io/hostwithquantum/python-poetry:v0.5.0
 
 ADD workspace /workspace
 WORKDIR /workspace
